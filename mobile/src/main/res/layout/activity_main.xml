@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#000"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:listSelector="@drawable/layout_border2"
+            android:background="@drawable/main_selector"></ListView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0:00"
+            android:textColor="#FFFFFF"></TextView>
+
+        <SeekBar
+            android:id="@+id/simpleSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="200"
+            android:progress="60"/>
+
+        <ToggleButton
+            android:id="@+id/playPause"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#4286f4"
+            android:onClick="onClickListener"
+            android:textOff="play"
+            android:textOn="pause"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
